@@ -1,6 +1,6 @@
 # 22. DP IV: Guitar Fingering, Tetris, Super Mario Bros.
 
-[https://www.youtube.com/watch?v=tp4_UXaVyx8]
+https://www.youtube.com/watch?v=tp4_UXaVyx8
 
 ## 5 Easy Steps to Dynamic Programming
 
@@ -8,7 +8,7 @@
 2. Guess (part of solution)
 3. Write recurrence that uses guessing and sub-problems
 4. Recurse + memoize (check if recurrence is acyclic) or bottom-up (needs a topological order)
-	* `Total running time = number of sub-problems x time / sub-problem`
+	* `Total running time = number of sub-problems * time / sub-problem`
 5. Solve the original problem
 
 ## Two Kinds of Guessing
@@ -21,7 +21,7 @@
 Given a sequence of n notes, find fingering for each note.
 
 - fingers 1, ..., F
-- Difficulty measure d(p, f, q, g), where p and q are notes, and f and g are fingers.
+- Difficulty measure `d(p, f, q, g)`, where p and q are notes, and f and g are fingers.
 
 ```
 # notes[i:] -> notes to be played
