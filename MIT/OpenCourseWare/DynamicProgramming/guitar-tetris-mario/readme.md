@@ -32,3 +32,5 @@ Given a sequence of n notes, find fingering for each note.
 	* How to play `notes[i:]` when using `f` for `notes[i]`
 2. Guess =
 	* finger `g` for `notes[i+1]`
+3. Recurrence =
+	* `DP(i, f) = min(DP(i+1, g) + d(notes[i], f, notes[i+1], g))`
