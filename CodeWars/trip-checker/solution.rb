@@ -2,9 +2,9 @@ class Solution
 
   def initialize
     @links = {
-      'ADL': ['MEL'],
-      'MEL': ['ADL', 'SYD'],
-      'SYD': ['BRI']
+      'ADL' => ['MEL'],
+      'MEL' => ['ADL', 'SYD'],
+      'SYD' => ['BRI']
     }
   end
 
@@ -16,7 +16,7 @@ class Solution
     return true if branches.include?(target)
 
     branches.each do |branch|
-      if !visted.include?(branch)
+      if !visited.include?(branch)
         result = possible?(branch, target, visited)
 
         if result.class != Array

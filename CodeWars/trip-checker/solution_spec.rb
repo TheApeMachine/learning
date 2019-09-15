@@ -16,21 +16,21 @@ RSpec.describe Solution, "#possible?" do
   context "from ADL to BRI" do
     it "should return true" do
       solution = Solution.new
-      solution.possible?('ADL', 'BRI')
+      expect(solution.possible?('ADL', 'BRI')).to eq(true)
     end
   end
 
   context "from MEL to BRI" do 
     it "should return true" do
       solution = Solution.new
-      solution.possible?('MEL', 'BRI')
+      expect(solution.possible?('MEL', 'BRI')).to eq(true)
     end
   end
   
   context "from SYD to ADL" do 
     it "should return false" do
       solution = Solution.new
-      solution.possible?('SYD', 'ADL')
+      expect(solution.possible?('SYD', 'ADL')).to eq(false)
     end
   end
 
